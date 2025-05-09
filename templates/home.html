@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block link %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Homepage.css') }}?v=1">
+{% endblock %}
+
+{% block body %}
+    <div class="homepage-container text-center">
+            <h1 class="text-5xl text-center font-bold mt-20 mb-6">
+                Monitoramento Broker
+            </h1>
+            <p class="text-lg text-center mb-8">
+                Aqui você podera visualizar o status de funcionalidade do Broker
+            </p>
+            <a href="/status" class="p-2 rounded bg-green-600 text-white">Verificar status</a>
+    </div>
+{% endblock %}
